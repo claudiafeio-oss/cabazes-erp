@@ -6,7 +6,7 @@
 2. Confirmar encomenda
 3. Receber parcial ou total
 4. Registar lote, validade e localização
-5. Validar receção
+5. Validar receção (lote/validade obrigatórios quando aplicável)
 6. Gerar movimentos de stock
 
 ## 2. Montagem de cabazes
@@ -14,9 +14,10 @@
 1. Criar ordem de montagem
 2. Copiar BOM ativa para snapshot da ordem
 3. Validar disponibilidade
-4. Registar lotes consumidos e eventuais substituições
+4. Registar lotes consumidos e eventuais substituições (FEFO quando há validade)
 5. Registar quantidade efetivamente produzida
-6. Gerar movimentos de consumo e produção
+6. Calcular validade do cabaz final (mínimo das validades consumidas)
+7. Gerar movimentos de consumo e produção
 
 ## 3. Inventário e ajuste
 

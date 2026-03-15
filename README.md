@@ -41,6 +41,11 @@ cp .env.example .env
 docker compose up --build
 ```
 
+## Credenciais seed (dev)
+
+- Email: `admin@cabazes.local`
+- Password: `Admin123!`
+
 ## Notas
 
 Este repositório nasce como monorepo. Sim, porque separar tudo logo de início é uma daquelas ideias que parecem sofisticadas até começarem a atrapalhar o trabalho real.

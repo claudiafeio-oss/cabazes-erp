@@ -14,6 +14,8 @@
 - O stock é derivado de movimentos, nunca de edição direta de saldo.
 - Se um produto exigir lote, não pode entrar nem ser consumido sem lote.
 - Se um produto exigir validade, não pode entrar sem validade.
+- O consumo com validade segue FEFO (obrigatório).
 - Alterações à BOM não afetam ordens de montagem já criadas.
 - Substituições devem ficar registadas com produto planeado e produto real usado.
-- O consumo sugerido de lotes deve seguir FEFO.
+- O cabaz final tem lote próprio e validade igual ao mínimo das validades consumidas.
+- Documentos validados não são apagados; cancelamentos usam movimentos de estorno.
