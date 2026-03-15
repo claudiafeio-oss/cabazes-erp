@@ -1,6 +1,6 @@
 import type { ReactNode } from 'react';
-
 import { GlobalNav } from '../components/GlobalNav';
+import './globals.css';
 
 export const metadata = {
   title: 'Cabazes ERP',
@@ -10,31 +10,16 @@ export const metadata = {
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="pt">
-      <body style={{ margin: 0, background: '#f6f6f6' }}>
-        <header
-          style={{
-            borderBottom: '1px solid #e0e0e0',
-            padding: '16px 24px',
-            background: '#fff',
-          }}
-        >
-          <div
-            style={{
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'space-between',
-              gap: 16,
-              flexWrap: 'wrap',
-              maxWidth: 1080,
-              margin: '0 auto',
-              width: '100%',
-            }}
-          >
-            <strong>Cabazes ERP</strong>
+      <body className="bg-gray-100 min-h-screen">
+        <header className="bg-white border-b border-gray-200">
+          <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between flex-wrap gap-4">
+            <strong className="text-gray-900 font-semibold">Cabazes ERP</strong>
             <GlobalNav />
           </div>
         </header>
-        {children}
+        <main className="max-w-6xl mx-auto px-6 py-8">
+          {children}
+        </main>
       </body>
     </html>
   );
